@@ -28,4 +28,9 @@ for col in numeric_col:
     plt.ylabel("Value")
     plt.show() 
 
+#pairplots
+sns.pairplot(df.select_dtypes(include=['int64', 'float64']))
+plt.show()
 
+#coorelation matrix computation
+corr = df.corr
